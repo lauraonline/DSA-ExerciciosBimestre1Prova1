@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const int vetN = 4;
+const int vetN = 20;
 typedef float tvetor[vetN];
 
 float verificarMenorSalario(tvetor vetor) {
