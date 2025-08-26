@@ -7,7 +7,7 @@ typedef float tvetor[vetN];
 
 float verificarMenorSalario(tvetor vetor) {
     float menor = vetor[0];
-    for (int i; i < vetN; i++) {
+    for (int i = 0; i < vetN; i++) {
         if (vetor[i] < menor) {
             menor = vetor[i];
         }
@@ -16,8 +16,8 @@ float verificarMenorSalario(tvetor vetor) {
 }
 
 void popularVetor(tvetor &vetor) {
-    for (int i; i < vetN; i++) {
-        cout<<"Salário da posição ["<<i<<"]: ";
+    for (int i = 0; i < vetN; i++) {
+        cout<<"Salário da posição "<<i+1<<": R$";
         cin>>vetor[i];
     }
 }
