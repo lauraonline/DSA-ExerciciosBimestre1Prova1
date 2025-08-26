@@ -5,8 +5,6 @@ using namespace std;
 const int vetN = 4;
 typedef int tvetor[vetN];
 
-tvetor calcularValoresAcimaDaMedia
-
 void popularVetor(tvetor &vetor) {
     for (int i = 0; i < vetN; i++) {
         cout<<"Valor "<<i+1<<": ";
