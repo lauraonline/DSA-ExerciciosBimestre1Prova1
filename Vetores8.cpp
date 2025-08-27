@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int vetN = 5;
+const int vetN = 10;
 typedef string tvetor[vetN];
 
 void popularVetor(tvetor &vetor) {
