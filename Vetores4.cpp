@@ -21,19 +21,21 @@ float calcularMediaVetor(tvetor vetor) {
     return media;
 }
 
-void exibirValoresMaioresQueAMedia(float media, tvetor vetor) {
-    cout<<"Valores maiores que a média:"<<endl;
+int calcularQtdeValoresMaioresQueAMedia(float media, tvetor vetor) {
+    int quantidade = 0;
     for (int i = 0; i < vetN; i++) {
         if (vetor[i] > media) {
-            cout<<vetor[i]<<"\t";
+            quantidade++;
         }
     }
+    return quantidade;
 }
 
 int main() {
     tvetor vetor;
     popularVetor(vetor);
     float media = calcularMediaVetor(vetor);
-    exibirValoresMaioresQueAMedia(media, vetor);
+    int quantidade = calcularQtdeValoresMaioresQueAMedia(media, vetor);
+    cout<<"Quantidade de valores maiores que a média: "<<quantidade;
     return 0;
 }
