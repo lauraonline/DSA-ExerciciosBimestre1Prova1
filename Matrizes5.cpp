@@ -59,9 +59,10 @@ int SomaDiagonalSecundaria (tmatriz matriz) {
     return soma;
 }
 
-// 00 01 02
-// 10 11 12
-// 20 21 22
+// 00 01 02 03
+// 10 11 12 13
+// 20 21 22 23
+// 30 31 32 33
 
 int main() {
     tmatriz matriz;
