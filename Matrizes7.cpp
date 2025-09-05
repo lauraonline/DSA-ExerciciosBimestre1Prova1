@@ -56,7 +56,7 @@ main() {
     tmatriz matriz;
     preencherMatriz(matriz);
     exibirMatriz(matriz);
-    for (int i = 1; i < 5; i++) {
+    for (int i = 1; i < N-1; i++) {
         cout<<"Soma da coluna "<<i<<": "<<calcularSomaColuna(matriz, i)<<endl;
     }
     analisarValoresAbaixoDaMedia(matriz);
